@@ -1649,7 +1649,7 @@ body:not(.title-tagline-hidden) .site-branding-text {
 .has-header-image.home.blog .custom-header,
 .has-header-video.home.blog .custom-header {
 	display: table;
-	height: 300px;
+	height: 100px;
 	height: 75vh;
 	width: 100%;
 }
@@ -2785,7 +2785,9 @@ h2.widget-title {
 /*--------------------------------------------------------------
 16.0 Media
 --------------------------------------------------------------*/
-
+.wp-post-image{
+	
+}
 img,
 video {
 	height: auto; /* Make sure images are scaled correctly. */
@@ -3375,6 +3377,18 @@ object {
 		height: 165px;
 		position: relative;
 	}
+
+@media screen and (min-width: 48em) {
+    .twentyseventeen-front-page.has-header-image .custom-header-media, 
+    .home.blog.has-header-image .custom-header-media {
+        min-height: 165px;
+        height: auto;
+    }
+
+    .twentyseventeen-front-page.has-header-video .custom-header-media {
+        height: 100vh;
+    }
+}
 
 	.twentyseventeen-front-page.has-header-image .custom-header-media,
 	.twentyseventeen-front-page.has-header-video .custom-header-media,

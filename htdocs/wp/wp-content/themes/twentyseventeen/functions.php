@@ -566,4 +566,5 @@ require get_parent_theme_file_path( '/inc/customizer.php' );
  */
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
 
+add_theme_support( 'post-thumbnails' );
 
